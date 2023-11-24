@@ -1,67 +1,181 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel's Restaurant</title>
-  </head> 
+    <style>
+          body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      main {
+        width: 80%;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      h1, h2, h3 {
+        color: #333;
+        text-align: center;
+      }
+
+      section {
+        margin-bottom: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        display: block;
+        margin: 0 auto;
+      }
+
+      ul, ol {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      figure {
+        margin: 10px 0;
+      }
+
+      figcaption {
+        font-style: italic;
+        color: #777;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      fieldset {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      legend {
+        font-weight: bold;
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="checkbox"],
+      input[type="radio"],
+      button {
+        margin-bottom: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        }
+    </style>
+  </head>
   <body>
-     <main>
-       <h1> SAMUEL'S RESTAURANT</h1> 
-    <section>
-       <h2>Samuel's food menu</h2>
-       <!--TODO:add link to cat photos-->
-       <p>See more <a target="-blank" href="">delicious meal</a> in our restaurant.</p>
-       <a href="https://freecatphotoapp.com"><img src="yam.jpg" alt="A Pizza on a plate."></a>
-      </section>
+    <main>
+      <h1>Welcome to Samuel's Marketplace</h1>
+  
       <section>
-        <h2>  Today's Food list</h2> 
-        <h3>Things customers loves:</h3>
+        <h2>Discover Delicious Meals</h2>
+        <p>Explore our menu and satisfy your cravings with our mouth-watering dishes.</p>
+        <a href="https://freecatphotoapp.com">
+          <img src="yam.jpg" alt="A Pizza on a plate.">
+        </a>
+      </section>
+  
+      <section>
+        <h2>Today's Specials</h2>
+        <h3>Things Customers Love:</h3>
         <ul>
-          <li>jollof rice</li>
+          <li>Jollof Rice</li>
           <li>Pasta</li>
           <li>Pizza</li>
-          <li>Pounded yam</li>
-        <ul>  
-      <figure>
-          <img src="cocacola.jpeg" alt=" cocacola in ice block.">
-           <figcaption>People <em>loves</em>  cold drink</figcaption>
-       </figure>
-      <h3>Today's Drink list:</h3> 
-     <ol>
-       <li>Monster</li>
-       <li>Chivita</li>
-       <li>Youghurt</li>
-       <li>Cocacola</li>
-     </ol> 
-    <figure>
-        <img src="chair.jpg" alt="People sitting on chair.">
-          <figcaption>Your <strong>wish</strong> is our wish.</figcaption>
-       </figure>
-     </section>>
-     <section>
-         <h2>Samuel's restaurant form<h2>
-         <form action="https://freecatphotoapp.com/submit-cat-photo"> 
-        <fieldset>
-          <legend>Do you need your food delivered or home service?</legend> 
-          <label><input id="indoor" type="radio"> Order</label>
-          <label><input id="outdoor" type="radio">Home service</label>  
-        </fieldset> 
-        <fieldset>
-             <lengend>How do you want to make your payment?</lengend>
-             <input id="Transfer" type="checkbox"> <label for="Transfer">Transfer</label>  
-             <input id-="Card" type="checkbox" name="personality"> <label for="Card">Card</label>
-             <input id="Cash" type="checkbox" name="personality" value="Cash"> <label for="Cash">Cash</label>
-            </fieldset> 
-             <input type="text" name="Samuel'srestauranturl" placeholder="Samuel's food URL" required>
-             <button type="submit">submit</button>
-            </form>
-         </section>
-      </main>
-     <footer>
-      <p>
-     <p>No copyright - <a href="">Samuelrestaurantpage.org</a>
-      </p>
-      </footer>
-    </body>
+          <li>Pounded Yam</li>
+        </ul>
+  
+        <figure>
+          <img src="cocacola.jpeg" alt="Cocacola in ice block.">
+          <figcaption>People <em>love</em> cold drinks.</figcaption>
+        </figure>
+  
+        <h3>Today's Drink List:</h3>
+        <ol>
+          <li>Monster</li>
+          <li>Chivita</li>
+          <li>Yogurt</li>
+          <li>Cocacola</li>
+        </ol>
+  
+        <figure>
+          <img src="chair.jpg" alt="People sitting on a chair.">
+          <figcaption>Your <strong>wish</strong> is our command.</figcaption>
+        </figure>
+      </section>
+  
+      <section>
+        <h2>Place Your Order</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Choose Delivery Option</legend>
+            <label><input id="indoor" type="radio" name="delivery"> Order</label>
+            <label><input id="outdoor" type="radio" name="delivery"> Home Service</label>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Payment Method</legend>
+            <input id="transfer" type="checkbox" name="payment"> <label for="transfer">Transfer</label>
+            <input id="card" type="checkbox" name="payment"> <label for="card">Card</label>
+            <input id="cash" type="checkbox" name="payment"> <label for="cash">Cash</label>
+          </fieldset>
+  
+          <input type="text" name="restaurant-url" placeholder="Samuel's Food URL" required>
+          <button type="submit">Submit Order</button>
+        </form>
+      </section>
+    </main>
+  
+    <footer>
+      <p>No copyright - <a href="#">Samuel's Restaurant Page</a></p>
+    </footer>
+  </body>
 </html>
